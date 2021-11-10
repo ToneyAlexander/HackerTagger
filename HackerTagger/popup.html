@@ -1,0 +1,44 @@
+<html>
+<head>
+    <style>
+        html {
+            width: 288px;
+            height: 320px;
+        }
+        body {
+            overflow: hidden;
+            margin: 0px;
+            background: #f6f6ef;
+            height: 320px;
+        }
+        input {
+            font-family: monospace;
+            margin: -4px 16px 16px 16px;
+        }
+        #tags {
+            width: 256px;
+            height: 256px;
+            border: 1px solid #767676 #c3c3c3 ;
+            margin: 16px;
+        }
+        .title {
+            font-size: 14pt;
+            background: #ff6600;
+            padding: 5px;
+            margin-bottom: 0px;
+        }
+        form {
+            margin-bottom: 0px;
+        }
+    </style>
+        <script type="text/javascript" src="popup.js">
+    </script>
+</head>
+<body>
+    <form>
+        <p class="title">Hacker Tagger</p>
+        <textarea id="tags"></textarea>
+        <input type="button" id="saveTags" value="save tags" />
+    </form>
+</body>
+</html>
