@@ -19,6 +19,10 @@ function tagUsers(tags) {
         //Can maybe check at this level for tag existing...
         for (var j = 0; j < element.childNodes.length; j++) {
             var node = element.childNodes[j];
+            //Fix for names with styling
+            if (node.nodeType === 1) {
+                node = node.childNodes[0];
+            }
             if (node.nodeType === 3) {
                 var username = node.nodeValue;
 
