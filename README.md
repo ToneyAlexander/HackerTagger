@@ -5,7 +5,7 @@ This is a chrome extension which adds a user tagging feature to Hacker News (new
 ## Notes
 
 * The tags are specified in a JSON block that you can edit by clicking the extension tile
-** The JSON block is totally freeform - the code only looks for specific fields - which allows you to add any sort of other data (basiclly any sort of notes)
+  * The JSON block is totally freeform - the code only looks for specific fields - which allows you to add any sort of other data (basiclly any sort of notes)
 * The tags are saved in chrome sync storage (if you have that enabled) so they'll automatically show up on all chromes you're logged in to
 
 ## Schema
