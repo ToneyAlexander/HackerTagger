@@ -4,7 +4,13 @@ function saveTags() {
     var tagJson = JSON.parse(tags);
 
     chrome.storage.sync.set({tags: tagJson});
-    chrome.tabs.reload();
+
+    chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+        if(tabs[0].url.includes("news.ycombinator.com")){
+            chrome.tabs.reload();
+        }
+    });
+
     window.close();
 }
 
